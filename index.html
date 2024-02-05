@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>First Website</title>
+    <title>Simple navigation bar</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .navbar {
+            background-color: rgb(227, 197, 255);
+            border-radius: 34px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            list-style: none;
+            float: left;
+            margin: 23px 15px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 8px 15px;
+            color: black;
+            background-color: rgb(255 255 255 / 55%);
+            border-radius: 15px;
+
+        }
+
+        #search {
+            float: right;
+            padding: 6px 21px;
+            margin: 17px 23px;
+            border-radius: 30px;
+        }
+        .navbar li a:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar li a:active{
+            background-color: rgb(225, 255, 164);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Numan Mirza</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <input type="text" name="searcch" id="search" placeholder="Search this website">
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
